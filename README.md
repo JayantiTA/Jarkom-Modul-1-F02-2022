@@ -2,9 +2,9 @@
 
 ### Anggota:
 
-1. [Andymas Narendra Bagaskara](https://gitlab.com/zaibir123) (05111940000192)
-2. [Jayanti Totti Andhina](https://gitlab.com/JayantiTA) (5025201037)
-3. [Gaudhiwaa Hendrasto](https://gitlab.com/gaudhiwaa) (5025201066)
+1. [Andymas Narendra Bagaskara](https://github.com/zaibir123) (05111940000192)
+2. [Jayanti Totti Andhina](https://github.com/JayantiTA) (5025201037)
+3. [Gaudhiwaa Hendrasto](https://github.com/gaudhiwaa) (5025201066)
 
 ### 1. Sebutkan web server yang digunakan pada "monta.if.its.ac.id"!
 
