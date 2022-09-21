@@ -37,3 +37,26 @@ Masukkan display filter `tcp.dstport == 80 || udp.dstport == 80`, kemudian didap
 Masukkan display filter `tcp.srcport == 21 || udp.srcport == 21`, kemudian didapatkan semua paket yang berasal dari port 21.
 
 ![images](images/nomor_4.jpg)
+
+
+### 5. Filter sehingga wireshark hanya mengambil paket yang berasal dari port 443!
+
+Masukkan display filter `tcp.srcport == 443 || udp.srcport == 443`, kemudian didapatkan semua paket yang berasal dari port 443.
+
+![images](images/nomor_5.png)
+
+### 7. Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+
+Masukkan `ipconfig getifaddr end` di terminal untuk memeriksa alamat ip.
+
+![images](images/nomor_7_1.png)
+
+Masukkan display filter `ip.src==10.8.108.209`, kemudian didapatkan semua paket yang berasal dari ip 10.8.108.209.
+
+![images](images/nomor_7_2.png)
+![images](images/nomor_7_3.png)
+
+### 9. Terdapat laporan adanya pertukaran file yang dilakukan oleh kedua mahasiswa dalam percakapan yang diperoleh, carilah file yang dimaksud! Untuk memudahkan laporan kepada atasan, beri nama file yang ditemukan dengan format [nama_kelompok].des3 dan simpan output file dengan nama “flag.txt”.
+
+Masukkan display filter `tcp.stream eq 29`, kemudian didapatkan semua paket yang berasal dari ip tcp stream 29. Berikut isi file salt (save as raw):
+![images](images/nomor_9.jpg)
