@@ -44,6 +44,12 @@ Masukkan display filter `tcp.srcport == 443 || udp.srcport == 443`, kemudian did
 
 ![images](images/nomor_5.png)
 
+### 6. Filter sehingga wireshark hanya menampilkan paket yang menuju ke lipi.go.id !
+
+Masukkan display filter `tcp contains "lipi.go.id"`, kemudian didapatkan semua paket yang menuju ke lipi.go.id.
+
+![images](images/nomor_6.png)
+
 ### 7. Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 
 Masukkan `ipconfig getifaddr end` di terminal untuk memeriksa alamat ip.
