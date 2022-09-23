@@ -38,7 +38,6 @@ Masukkan display filter `tcp.srcport == 21 || udp.srcport == 21`, kemudian didap
 
 ![images](images/nomor_4.jpg)
 
-
 ### 5. Filter sehingga wireshark hanya mengambil paket yang berasal dari port 443!
 
 Masukkan display filter `tcp.srcport == 443 || udp.srcport == 443`, kemudian didapatkan semua paket yang berasal dari port 443.
@@ -56,7 +55,25 @@ Masukkan display filter `ip.src==10.8.108.209`, kemudian didapatkan semua paket 
 ![images](images/nomor_7_2.png)
 ![images](images/nomor_7_3.png)
 
+### 8. Telusuri aliran paket dalam file .pcap yang diberikan, cari informasi berguna berupa percakapan antara dua mahasiswa terkait tindakan kecurangan pada kegiatan praktikum. Percakapan tersebut dilaporkan menggunakan protokol jaringan dengan tingkat keandalan yang tinggi dalam pertukaran datanya sehingga kalian perlu menerapkan filter dengan protokol yang tersebut.
+
+Masukkan display filter `ip.addr == 127.0.0.1 && ip.addr == 127.0.1.1` untuk mendapatkan paket-paket terkait percakapan antara dua mahasiswa.
+
+![images](images/nomor_8_1.png)
+
+Kemudian follow TCP stream dan ditemukan beberapa percakapan:
+
+![images](images/nomor_8_2.png)
+![images](images/nomor_8_3.png)
+![images](images/nomor_8_4.png)
+
 ### 9. Terdapat laporan adanya pertukaran file yang dilakukan oleh kedua mahasiswa dalam percakapan yang diperoleh, carilah file yang dimaksud! Untuk memudahkan laporan kepada atasan, beri nama file yang ditemukan dengan format [nama_kelompok].des3 dan simpan output file dengan nama “flag.txt”.
 
 Masukkan display filter `tcp.stream eq 29`, kemudian didapatkan semua paket yang berasal dari ip tcp stream 29. Berikut isi file salt (save as raw):
 ![images](images/nomor_9.jpg)
+
+### 10. Temukan password rahasia (flag) dari organisasi bawah tanah yang disebutkan di atas!
+
+Setelah didapatkan file `.des3` dari nomor 9, file tersebut di-_decrypt_ menggunakan _command_ `openssl des3 -d -in F02.des3 -out flag.txt`. Kemudian input password **nakano**. Kemudian didapatkan file output `flag.txt` yang berisi:
+
+![images](images/nomor_10.jpg)
