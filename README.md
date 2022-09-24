@@ -83,3 +83,7 @@ Masukkan display filter `tcp.stream eq 29`, kemudian didapatkan semua paket yang
 Setelah didapatkan file `.des3` dari nomor 9, file tersebut di-_decrypt_ menggunakan _command_ `openssl des3 -d -in F02.des3 -out flag.txt`. Kemudian input password **nakano**. Kemudian didapatkan file output `flag.txt` yang berisi:
 
 ![images](images/nomor_10.jpg)
+
+### Kendala pengerjaan
+
+Saat pengerjaan, terdapat kendala terkait soal nomor 9-10. Pada awalnya sudah mencoba menginputkan password "nakano", tetapi tidak berhasil karena file `.des3` sebelumnya disimpan dalam bentuk ASCII, bukan raw.
